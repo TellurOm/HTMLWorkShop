@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Professional Time Table</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      background: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    caption {
+      font-size: 26px;
+      font-weight: bold;
+      padding: 20px;
+      background-color: #1e90ff;
+      color: white;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 15px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f0f4f8;
+      font-weight: 600;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+
+    tr:hover td {
+      background-color: #e9f3ff;
+    }
+
+    td[colspan], td[rowspan] {
+      background-color: #dfeeff;
+      font-weight: bold;
+      color: #003366;
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <caption>Time Table</caption>
+    <tr>
+      <th>Hours</th>
+      <th>Mon</th>
+      <th>Tue</th>
+      <th>Wed</th>
+      <th>Thu</th>
+      <th>Fri</th>
+    </tr>
+    <tr>
+      <td>1st</td>
+      <td>Math</td>
+      <td>Science</td>
+      <td>Math</td>
+      <td>Science</td>
+      <td>Arts</td>
+    </tr>
+    <tr>
+      <td>2nd</td>
+      <td>Math</td>
+      <td>Science</td>
+      <td>Math</td>
+      <td>Science</td>
+      <td>Arts</td>
+    </tr>
+    <tr>
+      <td colspan="6">Lunch</td>
+    </tr>
+    <tr>
+      <td>4th</td>
+      <td>Math</td>
+      <td>Science</td>
+      <td>Math</td>
+      <td colspan="2" rowspan="2">Project</td>
+    </tr>
+    <tr>
+      <td>5th</td>
+      <td>Math</td>
+      <td>Science</td>
+      <td>Math</td>
+    </tr>
+  </table>
+
+</body>
+</html>
